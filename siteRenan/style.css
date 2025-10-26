@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:wdth,wght@75..100,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo";
+    font-weight: normal;
+}
+
+body {
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background: radial-gradient(circle at 105%, #120621, #130c17, #08080d, #08080d, #08080d);
+}
+
+/* texto da navbar */
+nav a {
+    color: #cfcfcf;
+    font-size: 18px;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 6px;
+    transition: 0.7s;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #521e82;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    padding: 0 6rem;
+}
+
+.logo img {
+    width: 40px;
+    border-radius: 50px;
+} /*fim da navbar */
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 10rem;
+    background: radial-gradient(circle at 10% 90%, #180f23, #1a0e1a, #08080d, #08080d, #08080d);
+}
+
+.text-content {
+    max-width: 40%;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+
+.tag {
+    background: #2d004d;
+    color: #caa8ff;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+
+h1 span {
+    color: #a855f7;
+}
+
+p {
+    color: #e5e5e5;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.noticias {
+    background: white;
+    border: none;
+    color: #787878;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.noticias:hover {
+    background-color: #d3d3d3;
+}
+
+.explore {
+    background: linear-gradient(90deg, #8b5cf6, #a855f7);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.explore:hover {
+    background: linear-gradient(90deg, #8b5cf6, #d2a2ff);
+}
+
+.stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #cec7d9;
+}
+
+.stats strong {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.pt2 {
+    background-color: white;
+}
+
+.pt2 h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 29, 29);
+    font-size: 30px;
+    padding-top: 90px;
+}
+
+.pt2 p {
+    color: #686868;
+    text-align: center;
+}
+
+.todoscards {
+    display: flex;
+    text-align:left;
+}
+
+.cards {
+    margin: 50px 100px;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    width: 500px;
+    height: 300px;
+}
+
+.cards h1 {
+    padding-top: 50px;
+    color: #0f0f1a;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.cards p {
+    color: #686868;
+}
+
+.cards h1 p {
+    padding: 0 5px 0 5px;
+}
