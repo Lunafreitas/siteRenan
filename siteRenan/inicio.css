@@ -9,7 +9,7 @@
 }
 
 body {
-    color: #fff;
+    color: #08080d;
 }
 
 .navbar {
@@ -41,6 +41,7 @@ nav a:hover {
     gap: 10px;
     font-size: 1.3rem;
     padding: 0 6rem;
+    color: #fff;
 }
 
 .logo img {
@@ -53,7 +54,7 @@ nav a:hover {
     justify-content: space-between;
     align-items: flex-start;
     padding: 5rem 10rem;
-    background: radial-gradient(circle at 1% 1%, #180f23, #1a0e1a, #08080d, #0e0e18, #080a16, #180f23);
+    background: radial-gradient(circle at 1% 1%, #221136, #1a0a2b, #0f0f1f,  #08080d,  #08080d, #08080d, #08080d);
 }
 
 .text-content {
@@ -63,10 +64,11 @@ nav a:hover {
 h1 {
     font-size: 4.5rem;
     line-height: 1.2;
+    color: #fff;
 }
 
 .tag {
-    background: #2d004d;
+    background: #4f1f6f88;
     color: #caa8ff;
     border: none;
     padding: 0.5rem 1rem;
@@ -97,6 +99,7 @@ p {
     padding: 0.8rem 1.5rem;
     border-radius: 10px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .noticias:hover {
@@ -107,7 +110,7 @@ p {
     background: #a855f7;
     color: #fff;
     font-weight: 600;
-    margin-right: 15px;
+    margin-right: 30px;
     padding: 0.8rem 1.5rem;
     border-radius: 10px;
     text-decoration: none;
@@ -156,7 +159,7 @@ p {
     padding: 50px 0 80px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .card {
@@ -200,11 +203,108 @@ p {
 }
 
 .pt3 {
-    background: radial-gradient(circle at 5%, #150f23, #0e191a, #08080d);
+    background: radial-gradient(circle at 5% 10%, #08080d, #271c3f, #132223, #08080d);
 }
 
 .pt3 h1 {
     font-size: 40px;
     padding-top: 90px;
     margin: 0 10rem
+}
+
+.pt3 a {
+    background-color: #ffffff;
+    color: #787878;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 8px;
+    transition: 0.3s;
+    float: right;
+    margin-top: 108px;
+    margin-right: 10rem;
+}
+
+.pt3 a:hover {
+    color: #ffffff;
+}
+
+/* cards jogo */
+.carrossel {
+    margin-top: 60px;
+    grid-auto-flow: column;
+    display: grid;
+    gap: 30px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0 10rem;
+}
+
+.card-jogo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #25385c;
+    background: radial-gradient(circle at 1% 80%, #8968b94a, #2e1e58b7, #1b285abb, #183a4eb1);
+    border-radius: 15px;
+    width: 320px;
+    height: 290px;
+    padding: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 90px;
+    scroll-snap-align: center;
+}
+
+.carrossel h2 { 
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+} 
+
+.carrossel p { 
+    color: #d5d5d5;
+    margin-top: 1px;
+    margin-bottom: 1rem;
+}
+
+.card-jogo:hover {
+    transform: scale(1.005);
+    border-color: #a28ac26c;
+}
+
+.card-jogo h4 {
+    color: #d1c3d8;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tags span {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.estrela {
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+    color:#fffdd8;
+    background-color: #7073c976;
+    border-radius: 30px;
+    padding: 6px 12px;
+    text-align: center;
+    font-size: 18px;
 }
