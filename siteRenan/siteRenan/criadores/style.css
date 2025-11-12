@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:wdth,wght@75..100,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +6,15 @@
     font-weight: normal;
 }
 
+body {
+    color: #fff;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 4rem;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
     background: radial-gradient(circle at 105%, #120621, #130c17, #08080d, #08080d, #08080d);
 }
 
@@ -40,7 +39,6 @@ nav a:hover {
     gap: 10px;
     font-size: 1.3rem;
     padding: 0 6rem;
-    color: #fff;
 }
 
 .logo img {
@@ -48,38 +46,46 @@ nav a:hover {
     border-radius: 50px;
 } /*fim da navbar */
 
+.intro {
+    background: radial-gradient(circle at 5%,#101d31, #130c17, #08080d);
+    padding: 6rem;
+    text-align: center;
+    margin: 10rem;
+    border-radius: 40px;
+    margin-top: -80px;
+}
+
 /* cards */
 .container {
+    flex-wrap: wrap;
     margin-top: -70px;
-    padding: 0 10rem;
+    display: flex;
+    gap: 30px;
+    margin-left: 10rem;
 }
 
 .card {
-    position: relative;
     display: flex;
     flex-direction: column;
     background: #fff;
     border: 3px solid #f0f0f0;
     border-radius: 15px;
-    width: 100%;
-    height: 200px;
+    width: 42%;
+    height: 350px;
+    padding: 2rem;
     transition: 0.3s;
     cursor: pointer;
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    margin-bottom: 1.5rem;
 }
 
 .container h1 { 
-    margin-top: 1rem;
     font-size: 25px;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
     color: #111;
 } 
 
 .container p { 
-    line-height: 28px;
     color: #555;
+    margin-top: 10px; 
 }
 
 .card:hover {
@@ -90,35 +96,29 @@ nav a:hover {
     color: #777;
     font-size: 15px;
     margin-top: -10px;
-    margin-bottom: 1.3rem;
+    margin-bottom: 10px;
+    line-height: 22px;
 }
 
-.lancamento {
-    position: absolute;
-    margin-top: 1rem;
-    right: 3rem;
-    color: #fff;
+.tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tags span {
     background-color: #8a2be2;
-    border-radius: 10px;
-    padding: 5px 10px;
-    text-align: center;
+    color: #ffffff;
     font-size: 12px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-weight: 500;
+}
+.card hr {
+    margin-top: 2rem;
 }
 
-.atualizacao {
-    position: absolute;
-    margin-top: 1rem;
-    right: 3rem;
-    color: #fff;
-    background-color: #3f3f3f;
-    border-radius: 10px;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 12px;
-}
-
-@media (min-width: 1366px) {
-    nav a {
-        font-size: 20px;
-    }
+.premios h4 {
+    margin-top: 0.5rem;
 }

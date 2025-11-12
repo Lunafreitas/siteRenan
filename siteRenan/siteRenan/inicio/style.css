@@ -8,15 +8,17 @@
     font-weight: normal;
 }
 
+body {
+    color: #08080d;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 4rem;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
     background: radial-gradient(circle at 105%, #120621, #130c17, #08080d, #08080d, #08080d);
+    flex-wrap: wrap;
 }
 
 /* texto da navbar */
@@ -56,7 +58,6 @@ nav a:hover {
     align-items: flex-start;
     padding: 3.5rem 10rem;
     background: radial-gradient(circle at 1% 1%, #221136, #1a0a2b, #0f0f1f, #08080d, #08080d, #08080d, #08080d);
-    padding-top: 150px;
 }
 
 .text-content {
@@ -206,7 +207,7 @@ p {
 
 .pt3 {
     background: radial-gradient(circle at 5% 10%, #08080d, #271c3f, #132223, #08080d);
-    padding-bottom: 15px;
+    padding-bottom: 90px;
 }
 
 .pt3 h1 {
@@ -239,7 +240,7 @@ p {
     gap: 30px;
     overflow-x: auto;
     scrollbar-width: none;
-    max-width: 1110px;
+    max-width: 78%;
     scroll-snap-type: x mandatory;
 }
 
@@ -335,10 +336,9 @@ p {
 }
 
 .bloco {
-    border-radius: 50px;
+    border-radius: 30px;
     margin: 10rem;
-    padding: 5rem; 
-    max-width: 1110px;
+    padding: 5rem 0 6rem 0;
     text-align: center;
     background: radial-gradient(circle at 5%, #7b44ce, #6e29a3);
 }
@@ -370,42 +370,4 @@ p {
 
 .vccc a:hover {
     color: #fff;
-}
-
-
-
-/* ----------RESPONSIVIDADE---------- */
-@media (min-width: 1366px) {
-    .text-content {
-        max-width: 45%;
-    }
-
-
-    h1 {
-        font-size: 6rem;
-    }
-
-
-    p {
-        margin-top: 2rem;
-        font-size: 18px;
-    }
-
-    .card-jogo {
-        width: 350px;
-        height: 320px;
-    }
-
-    nav a {
-        font-size: 20px;
-    }
-
-    .buttons {
-        margin-top: 4.5rem;
-    }
-
-    .stats {
-        margin-top: 4.5rem;
-        margin-bottom: 2rem;
-    }
 }
